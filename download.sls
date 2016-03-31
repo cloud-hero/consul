@@ -8,3 +8,6 @@ consul-get:
     - source_hash: md5=a336895f0b2d9c4679524f0c9896e1ec
     - archive_format: zip
     - if_missing: /usr/local/sbin/consul
+  file.managed:
+    - name: /usr/local/sbin/consul
+    - mode: 700
